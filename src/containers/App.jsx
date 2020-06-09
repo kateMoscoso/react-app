@@ -17,7 +17,7 @@ const App = () => {
     },[])
     //se encarga de escuchar alguna propiedad que pueda cambiar y vuelve a ejecutarse
     //segunda propiedad para que no se quede el loop infinito
-  return (
+  return videos.length === 0 ? <h1>Loading....</h1> : (
     <div className="App">
       <Header />
       <Search />
@@ -40,7 +40,7 @@ const App = () => {
             <CarouselItem key={item.id} {...item} />
           )}
         </Carousel>
-      </Categories>
+        </Categories>
       }
       <Footer />
     </div>
