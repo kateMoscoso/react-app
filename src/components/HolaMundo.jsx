@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../assets/styles/App.scss'
 const HolaMundo = () => {
   // Esto es JavaScript:
   const claseCSSHolaMundo = 'container-red';
